@@ -1,1 +1,22 @@
-deepface
+opencv-python
+opencv-contrib-python
+
+--- Abrir ---
+
+cd proyecto_login_facial
+
+--- Crear ---
+
+python -m venv venv
+
+--- Activar ---
+
+.\venv\Scripts\activate
+
+--- Dependencias ---
+
+pip install -r requirements.txt
+
+--- Ejecutar ---
+
+python login_facial.py

@@ -2,11 +2,7 @@
 import cv2
 import os
 
-
-
 # CARGAR
-
-
 
 cascade_path = cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 detector = cv2.CascadeClassifier(cascade_path)
@@ -14,11 +10,7 @@ if detector.empty():
     print("Error cargando el detector facial")
     exit()
 
-
-
 # INICIAR
-
-
 
 camara = cv2.VideoCapture(0)
 
@@ -28,11 +20,7 @@ if not camara.isOpened():
 print("Sistema iniciado")
 print("Presiona Q para salir")
 
-
-
 # LOGIN
-
-
 
 while True:
     ret, frame = camara.read()
@@ -92,11 +80,7 @@ while True:
     if tecla == ord("q"):
         break
 
-
-
 # CERRAR
-
-
 
 camara.release()
 cv2.destroyAllWindows()
